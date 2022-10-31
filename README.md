@@ -24,7 +24,7 @@ Users will be able to:
  * MySQL
  * Hibernate
 ### What I'll Have to Learn
-Integrate calendar object into the web app. Implement tracking. 
+Use Java Date class and render a calendar in the web app. Implement tracking. 
 ### Project Tracker
 Project Progress
 [Trello Board](https://trello.com/invite/b/66O3VvWv/ATTI915b2e227bd23a608bf47525907fd9e9048F29F8/liftoff-project)
