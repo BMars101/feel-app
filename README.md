@@ -1,4 +1,4 @@
-# water-mood-tracker
+# The Feel App
 ## Assignment Description
 My group is going to create a water and mood tracking app.
 [Project Outline Assignment](https://education.launchcode.org/liftoff/modules/assignments/project-outline)
