@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width", initial-scale="1.0" />
+        <title>Login</title>
+        <link href="login-stylesheet.css" rel="stylesheet" type="text/css" media="screen" />
+    </head>
+    <body>
+        <main id="main-holder">
+            <img id="logo" src="#" alt="feel app logo"> 
+            <h1 id="login-header-main" style="color:white;">Welcome to Feel</h1>
+            <q style="color: white; justify-items: center;">"In time and with water, everything changes. -Leonardo da Vinci"</q>
+            <h3 id="login-header-second" style="color: white;">Login to start tracking your mood</h3>
+            <div id="login-error-msg-holder">
+                <p id="login-error-msg">Invalid username<span id="error-msg-second-line">and/or password</span></p>
+            </div>
+            <form id="login-form">
+                <input type="text" name="username" id="username" class="login-username-field" placeholder="enter username">
+                <input type="password" name="password" id="password" class="login-password-field" placeholder="enter password">
+                <input type="submit" value="Login" id="login">
+            </form>
+
+            <button type="button" id="sign-up">New Users</button>
+            <button type="button" id="forgot-password">Forgot Password</button>
+        </main>
+        <script srrc="login-js.js">
+        </script>
+    </body>
+</html>
