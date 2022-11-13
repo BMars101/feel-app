@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-
 @Controller
 public class ProfileController {
 
@@ -16,7 +15,6 @@ public class ProfileController {
                 "<h2> My Profile</h2>"+
                 "</body></html>";
     }
-
 
    /* @GetMapping("My Profile")
     @ResponseBody
