@@ -1,19 +1,16 @@
-<!Doctype html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org/">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width", initial-scale="1.0" />
-        <title>Login</title>
-        <link href="login-stylesheet.css" rel="stylesheet" type="text/css" media="screen" />
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head th:replace="fragments :: head">
+</head>
+<body class="container">
+<nav th:replace="fragments :: navigation"></nav>
         <main id="main-holder">
             <img id="logo" src="#" alt="feel app logo"> 
             <h1 id="login-header-main" style="color:white;">Welcome to Feel</h1>
-            <q style="color: white; justify-items: center;">"In time and with water, everything changes. -Leonardo da Vinci"</q>
-            <h3 id="login-header-second" style="color: white;">Login to start tracking your mood</h3>
+            <q style="color: charcoal; justify-items: center;">In time and with water, everything changes.</q><p style="color: charcoal; justify-items: center;"> -Leonardo da Vinci</p>
+            <h3 id="login-header-second" style="color: charcoal;">Login to start tracking your mood</h3>
 
-            <form id="login-form">
+            <form method="post" id="login-form">
                 <input type="text" name="username" id="username" class="login-username-field" placeholder="enter username" th:field="${loginDTO.username}">
                 <input type="password" name="password" id="password" class="login-password-field" placeholder="enter password" th:field="${loginDTO.password}">
                 <input type="submit" value="Login" id="login">
@@ -22,7 +19,7 @@
             <button type="button" id="sign-up">New Users</button>
             <button type="button" id="forgot-password">Forgot Password</button>
         </main>
-        <script srrc="login-js.js">
+        <script src="login-js.js">
         </script>
     </body>
 </html>
