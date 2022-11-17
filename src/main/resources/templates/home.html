@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org/">
-
-<body>
-
-<h1>Test landing page</h1>
-
-
-<ul class="nav">
-    <li class="nav-item"><a class="nav-link" href="/register">Register User</a></li>
-    <li class="nav-item"><a class="nav-link" href="/login">User Login</a></li>
-</ul>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head th:replace="fragments :: head">
+</head>
+<body class="container">
+<nav th:replace="fragments :: navigation"></nav>
+<div>
+    <form method = "post" action="/water-intake-teaser">
+        <label>Enter weight: </label>
+        <input th:field="${waterIntake.weight}"><br/>
+        <label>Enter how many minutes a day you exercise: </label>
+        <input th:field="${waterIntake.dailyActivityTime}">
+        <input type = "submit" value="Calculate Water Needs">
+    </form>
+</div>
 
 </body>
 </html>
