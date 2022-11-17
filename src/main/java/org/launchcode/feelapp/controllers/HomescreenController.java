@@ -1,2 +1,4 @@
-package org.launchcode.feelapp.controllers;public class HomescreenController {
+package org.launchcode.feelapp.controllers;
+
+public class HomescreenController {
 }
