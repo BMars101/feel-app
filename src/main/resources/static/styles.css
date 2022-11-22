@@ -1,22 +1,25 @@
 body {
-    height: 100%;
+    height: 80%;
     margin: 0;
     font-family: Arial, sans-serif;
     display: grid;
     justify-items: center;
     align-items: center;
-    background-image: url('images/water-in-mug.jpg');
+    background-image: url('front-end/feel-app/images/water-in-mug.jpg');
     background-size: cover;
     opacity: 1.00;
 }
-
 html {
     height: 100%;
+ }
+
+.navbar {
+    margin: 0;
 }
 
 #main-holder {
-    width: 50%;
-    height: 70%;
+    width: 80%;
+    height: 100%;
     display: grid;
     justify-items: center;
     align-items: center;
