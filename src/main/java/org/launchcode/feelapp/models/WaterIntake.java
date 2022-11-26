@@ -5,6 +5,7 @@ public class WaterIntake {
     private double weight;
     private double dailyActivityTime;
 
+
     public WaterIntake(double weight, double dailyActivityTime) {
         this.weight = weight;
         this.dailyActivityTime = dailyActivityTime;

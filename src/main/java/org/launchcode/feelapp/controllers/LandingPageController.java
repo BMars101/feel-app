@@ -13,9 +13,9 @@ public class LandingPageController {
 
     private WaterIntake waterIntake = new WaterIntake();
     @GetMapping
-    public String home(Model model){
+    public String displayIndex(Model model){
         model.addAttribute("waterIntake", new WaterIntake());
-        return "home";
+        return "index";
     }
 
     @GetMapping("water-intake-teaser")
@@ -25,7 +25,7 @@ public class LandingPageController {
     }
 
     @PostMapping("water-intake-teaser")
-    public String calculateWaterFromForm(@RequestParam double weight, @RequestParam double dailyActivityTime){
+    public String calculateWaterFromForm(@RequestParam double weight, @RequestParam(required = false) double dailyActivityTime){
         waterIntake = new WaterIntake(weight, dailyActivityTime);
         return "redirect:water-intake-teaser";
     }
