@@ -1,6 +1,10 @@
 package org.launchcode.feelapp.models.dto;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
 public class RegisterDTO extends LoginDTO{
+
 
     private String verifyPassword;
 
