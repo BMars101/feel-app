@@ -6,6 +6,7 @@ public class WaterIntake {
     private double dailyActivityTime;
 
 
+
     public WaterIntake(double weight, double dailyActivityTime) {
         this.weight = weight;
         this.dailyActivityTime = dailyActivityTime;
@@ -31,6 +32,9 @@ public class WaterIntake {
     public void setDailyActivityTime(double dailyActivityTime) {
         this.dailyActivityTime = dailyActivityTime;
     }
+
+
+
 
 
     public String getWaterNeeds(){
