@@ -12,12 +12,14 @@
 
             <form method="post" id="login-form">
                 <input type="text" name="username" id="username" class="login-username-field" placeholder="enter username" th:field="${loginDTO.username}">
+                <p class="error" th:errors="${loginDTO.username}"></p>
                 <input type="password" name="password" id="password" class="login-password-field" placeholder="enter password" th:field="${loginDTO.password}">
+                <p class="error" th:errors="${loginDTO.password}"></p>
                 <input type="submit" value="Login" id="login">
             </form>
 
-            <button type="button" id="sign-up">New Users</button>
-            <button type="button" id="forgot-password">Forgot Password</button>
+            <p>Don't have an account? <a href="/register">Register for one.</a></p>
+            <button type="button" id="forgot-password">Forgot Password placeholder</button>
         </main>
         <script src="login-js.js">
         </script>

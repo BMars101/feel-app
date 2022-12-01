@@ -46,12 +46,12 @@ public class AuthenticationFilter implements HandlerInterceptor {
         HttpSession session = request.getSession();
         User user = authenticationController.getUserFromSession(session);
 
-        // The user is logged in
+       //user is logged in
         if (user != null) {
             return true;
         }
 
-        // The user is NOT logged in
+      //not logged in
         response.sendRedirect("/login");
         return false;
     }
