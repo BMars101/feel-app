@@ -15,7 +15,7 @@ public class LandingPageController {
     @GetMapping
     public String home(Model model){
         model.addAttribute("waterIntake", new WaterIntake());
-        return "home";
+        return "index";
     }
 
     @GetMapping("water-intake-teaser")

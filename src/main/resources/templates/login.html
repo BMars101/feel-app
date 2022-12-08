@@ -11,13 +11,12 @@
             <h3 id="login-header-second" style="color: charcoal;">Login to start tracking your mood</h3>
 
             <form method="post" id="login-form">
-                <input type="text" name="username" id="username" class="login-username-field" placeholder="enter username" th:field="${loginDTO.username}">
-                <input type="password" name="password" id="password" class="login-password-field" placeholder="enter password" th:field="${loginDTO.password}">
+                <input type="text" id="username" class="login-username-field" placeholder="enter username" th:field="${loginDTO.username}">
+                <input type="password" id="password" class="login-password-field" placeholder="enter password" th:field="${loginDTO.password}">
                 <input type="submit" value="Login" id="login">
             </form>
 
-            <button type="button" id="sign-up">New Users</button>
-            <button type="button" id="forgot-password">Forgot Password</button>
+            <button type="button" id="sign-up"><a href="/register">New Users</a></button>
         </main>
         <script src="login-js.js">
         </script>
