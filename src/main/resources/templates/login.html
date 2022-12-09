@@ -9,6 +9,7 @@
             <h1 id="login-header-main">Welcome to Feel</h1>
             <q style="color: charcoal; justify-items: center;">In time and with water, everything changes.</q><p style="color: charcoal; justify-items: center;"> -Leonardo da Vinci</p>
             <h3 id="login-header-second" style="color: charcoal;">Login to start tracking your mood</h3>
+<<<<<<< HEAD
             <form class="form-horizontal" method="post" id="login-form" action="/home-page">
                 <div class="form-group">
                     <label>Username </label>
@@ -31,6 +32,16 @@
 
             <p>Don't have an account? <a href="/register">Register Here</a></p>
 <!--            <button type="button" id="forgot-password">Forgot Password</button>-->
+=======
+
+            <form method="post" id="login-form">
+                <input type="text" id="username" class="login-username-field" placeholder="enter username" th:field="${loginDTO.username}">
+                <input type="password" id="password" class="login-password-field" placeholder="enter password" th:field="${loginDTO.password}">
+                <input type="submit" value="Login" id="login">
+            </form>
+
+            <button type="button" id="sign-up"><a href="/register">New Users</a></button>
+>>>>>>> 434a403d09654726421111d2f72200f51c5a04c7
         </main>
         <script src="login-js.js">
         </script>

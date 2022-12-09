@@ -13,6 +13,7 @@ import java.util.Optional;
 
 public class HomescreenController {
 
+<<<<<<< HEAD
     @Autowired
     private UserRepository userRepository;
 
@@ -25,6 +26,11 @@ public class HomescreenController {
 //        User theUser = userRepository.findByUsername(username);
 //        model.addAttribute("username", theUser);
 //        return "home-page";
+=======
+//    @GetMapping("/")
+//    public String displayUserHomePage(){
+//        return "index";
+>>>>>>> 434a403d09654726421111d2f72200f51c5a04c7
 //    }
 
 }
