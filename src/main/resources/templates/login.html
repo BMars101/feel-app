@@ -9,17 +9,19 @@
             <h1 id="login-header-main">Welcome to Feel</h1>
             <q style="color: charcoal; justify-items: center;">In time and with water, everything changes.</q><p style="color: charcoal; justify-items: center;"> -Leonardo da Vinci</p>
             <h3 id="login-header-second" style="color: charcoal;">Login to start tracking your mood</h3>
-            <form class="form-horizontal" method="post" id="login-form" action="/home-page">
+            <form class="form-horizontal" method="post" id="login-form">
                 <div class="form-group">
                     <label>Username </label>
                     <div class="col-sm-10">
-                    <input type="text" name="username" id="username" class="login-username-field" placeholder="enter username" th:field="${loginDTO.username}">
+                    <input type="text" id="username" placeholder="enter username" th:field="${loginDTO.username}">
+                        <p class="error" th:errors="${loginDTO.username}"></p>
                     </div>
                 </div>
                 <div class="form-group">
                     <label>Password </label>
                     <div class="col-sm-10">
-                    <input type="password" name="password" id="password" class="login-password-field" placeholder="enter password" th:field="${loginDTO.password}">
+                    <input type="password" id="password" placeholder="enter password" th:field="${loginDTO.password}">
+                        <p class="error" th:errors="${loginDTO.password}"></p>
                     </div>
                 </div>
                 <div class="form-group">
@@ -31,13 +33,6 @@
 
             <p>Don't have an account? <a href="/register">Register Here</a></p>
 
-            <form method="post" id="login-form">
-                <input type="text" id="username" class="login-username-field" placeholder="enter username" th:field="${loginDTO.username}">
-                <input type="password" id="password" class="login-password-field" placeholder="enter password" th:field="${loginDTO.password}">
-                <input type="submit" value="Login" id="login">
-            </form>
-
-            <button type="button" id="sign-up"><a href="/register">New Users</a></button>
 
         </main>
         <script src="login-js.js">

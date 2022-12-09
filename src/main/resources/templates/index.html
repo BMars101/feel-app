@@ -4,18 +4,6 @@
 </head>
 <body class="container">
 <nav th:replace="fragments :: navigation"></nav>
-
-<p>Want to make a journal entry?<a href="journal"> Click here</a></p>
-
-<div>
-    <form method = "post" action="/water-intake-teaser">
-        <label>Enter weight: </label>
-        <input th:field="${waterIntake.weight}"><br/>
-        <label>Enter how many minutes a day you exercise: </label>
-        <input th:field="${waterIntake.dailyActivityTime}">
-        <input type = "submit" value="Calculate Water Needs">
-    </form>
-</div>
-
+<h1 th:text="${username}"></h1>
 </body>
 </html>

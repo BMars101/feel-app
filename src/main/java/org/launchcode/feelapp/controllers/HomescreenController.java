@@ -21,12 +21,12 @@ public class HomescreenController {
     @Autowired
     private AuthenticationController authenticationController;
 
-    @RequestMapping(method = {RequestMethod.GET, RequestMethod.POST}, value="home-page")
+    @GetMapping("")
     public String displayUserHomePage(HttpServletRequest request, Model model){
         HttpSession session = request.getSession();
         User user = authenticationController.getUserFromSession(session);
         model.addAttribute("username", "Hi " + user.getUsername() + "!");
-        return "home-page";
+        return "index";
     }
 
 

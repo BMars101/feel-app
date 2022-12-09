@@ -4,6 +4,9 @@
 </head>
 <body class="container">
 <nav th:replace="fragments :: navigation"></nav>
-<h1 th:text="${username}"></h1>
+<div>
+    <h2>Recommended Daily Water Needs</h2>
+    <h4 th:text="${waterIntake}"></h4>
+</div>
 </body>
 </html>
