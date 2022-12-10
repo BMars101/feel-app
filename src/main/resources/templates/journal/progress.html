@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head th:replace="fragments :: head">
+</head>
+<body class="container">
+<nav th:replace="fragments :: navigation"></nav>
+<form method="post">
+    <div>
+        <label>Write what is on your mind.
+            <input Th:field="${journalEntry.writtenEntry}">
+        </label>
+        <p Th:errors="${journalEntry.writtenEntry}"></p>
+    </div>
+    <div>
+        <label>How much water did you drink today in ounces?
+            <input Th:field="${journalEntry.dailyWater.waterAmount}"><p>oz</p>
+        </label>
+        <p Th:errors="${journalEntry.dailyWater.waterAmount}"></p>
+    </div>
+    <div>
+        <label>
+            <select th:field="${journalEntry.dailyMood}">
+                <option th:value="Happy">Happy</option>
+                <option th:value="Sad">Sad</option>
+                <option th:value="Angry">Angry</option>
+                <option th:value="Neutral">Neutral</option>
+            </select>
+        </label>
+
+    </div>
+    <div>
+        <input type="submit" value="Complete Entry">
+    </div>
+</form>
+
+
+
+</body>
+</html>
