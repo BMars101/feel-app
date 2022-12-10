@@ -11,12 +11,9 @@ import java.util.List;
 public class ProfileController {
     private static List<String> profile = new ArrayList<>();
 
-    @GetMapping("My Profile")
-    @ResponseBody
-    public String name(@PathVariable String name) {
-        return "<html><body>"+
-                "<h2> My Profile</h2>"+
-                "</body></html>";
+    @GetMapping
+    public String name() {
+        return "Profile";
     }
 
 
