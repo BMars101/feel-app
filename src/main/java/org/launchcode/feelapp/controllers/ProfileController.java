@@ -1,12 +1,15 @@
 package org.launchcode.feelapp.controllers;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
 @Controller
+@RequestMapping ("profile")
 public class ProfileController {
+    private static List<String> profile = new ArrayList<>();
 
     @GetMapping("My Profile")
     @ResponseBody
@@ -16,9 +19,5 @@ public class ProfileController {
                 "</body></html>";
     }
 
-   /* @GetMapping("My Profile")
-    @ResponseBody
-    public String nameoftheHydrator(@PathVariable String name, @RequestParam int age) {
-        return name + "Hydrated!";
-    }*/
+
 }
