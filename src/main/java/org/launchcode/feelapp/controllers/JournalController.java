@@ -21,33 +21,35 @@ public class JournalController {
     @Autowired
     JournalRepository journalRepository;
 
+    @GetMapping
+    public String displayJournal(Model model){
+        model.addAttribute("journalEntry", journalRepository.findAll());
 
-@GetMapping
-    public String displayJournalContents(Model model){
-    model.addAttribute("title", "Your Journal Entries");
-    model.addAttribute("JournalEntry", journalRepository.findAll());
-    return "progress";
-}
+        return "journal/journalContents";
+
+    }
 
 
-@GetMapping("journal")
-    public String displayCreateJournalEntry(Model model){
+@GetMapping("progress")
+    public String displayWriteJournalContents(Model model){
     model.addAttribute("title", "Write Journal Entry");
-    model.addAttribute(new JournalEntry());
-    return "journal";
+    model.addAttribute("journalEntry", new JournalEntry());
+    return "journal/progress";
 }
 
-@PostMapping("journal")
+
+@PostMapping("progress")
     public String processCreateJournalEntry(@Valid @ModelAttribute JournalEntry journalEntry, Errors errors, Model model){
 
     if (errors.hasErrors()){
         model.addAttribute("title", "Write Journal Entry");
         model.addAttribute(new JournalEntry());
-        return "journal";
+        return "journal/progress";
     }
     journalRepository.save(journalEntry);
-    return "redirect:/progress";
+    return "redirect:";
 }
+
 
 
 
