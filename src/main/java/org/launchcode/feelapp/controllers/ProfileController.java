@@ -12,7 +12,6 @@ public class ProfileController {
     private static List<String> profile = new ArrayList<>();
 
     @GetMapping
-    @ResponseBody
     public String name() {
         return "Profile";
 

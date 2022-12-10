@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org/">
-<head>
-    <meta charset="UTF-8">
-    <title>Profile</title>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head th:replace="fragments :: head">
 </head>
-<body>
+<body class="container">
+<nav th:replace="fragments :: navigation"></nav>
 
 <h1>Create Profile</h1>
 
-<form method="post" action="/profile/create">
-    <input type="text" name="Name">
-    <input type="text" name="weight">
-    <input type="text" name="age">
+<form class="form-control" method="post" action="/profile/create">
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" name="Name">
+    </div>
+    <div class="form-group">
+        <label>Weight</label>
+        <input type="text" name="weight">
+    </div>
+    <div class="form-group">
+        <label>Age</label>
+        <input type="text" name="age">
+    </div>
     <input type="text" name="dateOfBirth">
     <input type="text" name="mood">
     <input type="text" name="dailyWaterIntake">
@@ -26,7 +34,7 @@
     <input type="text" name="Do you have any emotional goals?">
     <input type="text" name="How will tracking your water intake improve your life?">
     <input type="text" name="What is your tucked away goal that you've never said aloud?">
-
+    </div>
 
     <input type="submit" value="Create Profile">
 
