@@ -1,10 +1,23 @@
 /*import javax.validation.constraints.NotBlank;*/
 package org.launchcode.feelapp.models;
 
+import javax.persistence.Entity;
+
+//@Entity
 public class Profile {
 
 
     private String name;
+    private Integer weight;
+    private Integer age;
+    private Integer dateOfBirth;
+    private String activityLevel;
+    private String energyLevel;
+    private String emotionalGoals;
+    private String lifeImprovement;
+    private String secretGoal;
+
+
 
     public Profile(String name) {
         this.name = name;
@@ -32,7 +45,7 @@ public class Profile {
         this.weight = weight;
     }
 
-    private Integer weight;
+
 
     public Integer getAge() {
         return age;
@@ -42,7 +55,7 @@ public class Profile {
         this.age = age;
     }
 
-    private Integer age;
+
 
     public Integer getDateOfBirth() {
         return dateOfBirth;
@@ -52,27 +65,7 @@ public class Profile {
         this.dateOfBirth = dateOfBirth;
     }
 
-    private Integer dateOfBirth;
 
-    public String getMood() {
-        return mood;
-    }
-
-    public void setMood(String mood) {
-        this.mood = mood;
-    }
-
-    private String mood;
-
-    public Integer getDailyWaterIntake() {
-        return dailyWaterIntake;
-    }
-
-    public void setDailyWaterIntake(Integer dailyWaterIntake) {
-        this.dailyWaterIntake = dailyWaterIntake;
-    }
-
-    private Integer dailyWaterIntake;
 
     public String getActivityLevel() {
         return activityLevel;
@@ -82,7 +75,7 @@ public class Profile {
         this.activityLevel = activityLevel;
     }
 
-    private String activityLevel;
+
 
     public String getEnergyLevel() {
         return energyLevel;
@@ -92,7 +85,7 @@ public class Profile {
         this.energyLevel = energyLevel;
     }
 
-    private String energyLevel;
+
 
     public String getEmotionalGoals() {
         return emotionalGoals;
@@ -102,7 +95,7 @@ public class Profile {
         this.emotionalGoals = emotionalGoals;
     }
 
-    private String emotionalGoals;
+
 
     public String getLifeImprovement() {
         return lifeImprovement;
@@ -112,7 +105,7 @@ public class Profile {
         this.lifeImprovement = lifeImprovement;
     }
 
-    private String lifeImprovement;
+
 
     public String getSecretGoal() {
         return secretGoal;
@@ -122,6 +115,6 @@ public class Profile {
         this.secretGoal = secretGoal;
     }
 
-    private String secretGoal;
+
 
 }
