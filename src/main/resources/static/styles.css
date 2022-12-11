@@ -1,67 +1,22 @@
-body {
-    height: 100%;
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    background-image: url('images/water-in-mug.jpg');
-    background-size: cover;
-    opacity: 1.00;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html {
-    height: 100%;
-}
-
-#main-holder {
-    width: 50%;
-    height: 70%;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    border-radius: 7px;
-    box-shadow: 0px 0px 5 px 2 px black;
-}
-
-#login-error-msg-holder {
+nav{
     width: 100%;
-    height: 100%;
-    display: grid;
-    margin: 0;
-    padding: 5px;
-    font-size: 12px;
-    border: 1px solid black;
-    opacity: 0;
+    background: gray;
 }
-
-#error-msg-second-line {
-    display: block;
-}
-
-#login-form {
-    border: none;
-    border-bottom: 1px solid black;
-    margin-bottom: 10px;
-    border-radius: 3px;
-    outline: none;
-    padding: 0px 0px 5px 5px;
-}
-
-#login-form-submit {
+footer {
     width: 100%;
-    padding: 7px;
-    border: none;
-    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background: yellow;
     color: white;
-    font-weight: bold;
-    cursor: pointer;
-    outline: none;
 }
-
-#login-header-main{
-    font-size: 48px;
-    text-shadow: -1px -1px black, 1px 1 px gray, -3px 0 4px black;
-    font-family: "Segoe print", Arial, Helvetica, sans-serif;
-    align-items: center;
+.image-container {
+    background-image: url(/"imgs/water-drop-image.jpg");
 }
