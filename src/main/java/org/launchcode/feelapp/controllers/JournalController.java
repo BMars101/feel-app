@@ -23,7 +23,7 @@ public class JournalController {
 
     @GetMapping
     public String displayJournal(Model model){
-        model.addAttribute("journalEntry", journalRepository.findAll());
+        model.addAttribute("journalEntries", journalRepository.findAll());
 
         return "journal/journalContents";
 

@@ -5,6 +5,18 @@
 <body class="container">
 <nav th:replace="fragments :: navigation"></nav>
 
+<table>
+    <thead>
+    <tr>
+        <th> Your Journal Entries</th>
+    </tr>
+    </thead>
+    <tr th:each="journalEntry : ${journalEntries}">
+        <td th:text="${journalEntry.dailyMood}"></td>
+        <td th:text="${journalEntry.writtenEntry}"></td>
+        <td th:text="${journalEntry.dailyWater.waterAmount}"></td>
+    </tr>
+</table>
 
 </body>
 </html>
