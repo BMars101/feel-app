@@ -3,8 +3,8 @@ package org.launchcode.feelapp.models;
 
 import javax.persistence.Entity;
 
-//@Entity
-public class Profile {
+@Entity
+public class Profile extends AbstractEntity{
 
 
     private String name;
@@ -22,7 +22,7 @@ public class Profile {
     public Profile(String name) {
         this.name = name;
     }
-
+    public Profile() {}
     public String getName() {
         return name;
     }
