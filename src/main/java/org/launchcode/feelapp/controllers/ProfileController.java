@@ -15,21 +15,21 @@ import java.util.List;
 public class ProfileController {
     @Autowired
    private ProfileRepository profileRepository;
-    @GetMapping(value ="/profile")
+    @GetMapping("profile")
     public String name() {
         return "Profile";
 
     }
-    @PostMapping("/profile/Create")
+    @PostMapping("/create")
     public String processProfileForm(@ModelAttribute @Valid Profile profile) {
     profileRepository.save(profile);
-    return "redirect:/profile/Create";
+    return "redirect:/create";
 
     }
-    @GetMapping("/profile/Create")
+    @GetMapping("/create")
     public String displayProfile(Model model) {
         model.addAttribute("profile", profileRepository.findAll());
-        return "/profile/Create";
+        return "/create";
     }
 
 //    public String checkActivityLevel(String activityLevel) {

@@ -5,7 +5,6 @@ body {
     display: grid;
     justify-items: center;
     align-items: center;
-    background-image: url('images/water-in-mug.jpg');
     background-size: cover;
     opacity: 1.00;
 }
