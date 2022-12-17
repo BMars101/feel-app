@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head th:replace="fragments :: head">
+</head>
+<body class="container">
+<nav th:replace="fragments :: navigation"></nav>
+<h3 th:text="${userGreeting}"></h3>
+<p>Want to make a journal entry?<a href="journal/progress"> Click here</a></p>
+
+
+</body>
+<footer th:replace = "fragments :: footer"></footer>
+</html>

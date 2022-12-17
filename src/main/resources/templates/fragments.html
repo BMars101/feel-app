@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head th:fragment="head">
+    <meta charset="UTF-8"/>
+    <title>Coding Events</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
+<nav th:fragment = "navigation" class="navbar navbar-light">
+    <h1>Feel</h1>
+    <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/register">Register User</a></li>
+        <li class="nav-item"><a class="nav-link" href="/login">User Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+    </ul>
+</nav>
+</body>
+<footer th:fragment = "footer" class="footer">
+    <div class="footer-item">
+        <h5>Contact Us</h5>
+    </div>
+    <div class="footer-item">
+        <h5>About Us</h5>
+    </div>
+    <div class="footer-item">
+        <h5>Resources</h5>
+    </div>
+</footer>
+</html>
