@@ -8,11 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body class="container" style="background: #10293e; font-family: 'Montserrat', sans-serif;">
-
-<!--<nav th:replace="fragments :: navigation"></nav>-->
 <div class="background">
     <image class="background-image" th:src="@{/img/water-drop-image.jpg}" style="position: absolute; left: 0; height: 80%; width: 100%;" alt="water-drop-image">
-        <div style="display: block; position: absolute; margin: 28% 20%; align-items: center; width: 40%; justify-content: center; padding: 0px 130px; line-height: 1.5; color: #e0eaef; font-weight: 400; font-size: x-large;
+        <div>
+        <ul style="display: inline-flex; position: absolute; float: right; padding: 50px;">
+            <li class="nav-item" style="padding-right: 20px; list-style-type: none;"><a class="nav-link" href="/">Home </a></li>
+            <li class="nav-item" style="padding-right: 20px"><a class="nav-link" href="/register">Register User </a></li>
+            <li class="nav-item" style="padding-right: 20px"><a class="nav-link" href="/login">User Login </a></li>
+            <li class="nav-item" style="padding-right: 20px"><a class="nav-link" href="/logout">Logout </a></li>
+        </ul>
+        <h1 style="display: inline-block; position: absolute; margin-top: 15px;">Welcome to Feel</h1>
+        </div>
+        <div class="quote-container"  style="display: block; position: relative; padding-top: 110px; align-items: center; justify-content: center; text-align: center;">
+            <h4>To find out how much water you should drink every day, enter your weight and how many minutes on average you exercise on a given day.</h4>
+        </div>
+        <div style="display: block; position: absolute; margin: 15% 20%; align-items: center; width: 40%; justify-content: center; padding: 0px 130px; line-height: 1.5; color: #e0eaef; font-weight: 400; font-size: x-large;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
             <form class="teaser-form" method = "post" action="/water-intake-teaser" style="width: 400px; height: 300px;">
                 <div class="form-group" style="padding: 10px;">
