@@ -23,8 +23,6 @@ dependencies {
 	/*implementation '<groupId>org.hibernate.javax.persistence</groupId>'
 	implementation '<artifactId>hibernate-jpa-2.0-api</artifactId>'
 	implementation '<version>1.0.1.Final</version>'*/
-	implementation '<groupId>org.springframework.boot</groupId>'
-	implementation '<artifactId>spring-boot-starter-validation</artifactId'
 	implementation 'org.springframework.security:spring-security-crypto'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation('org.springframework.boot:spring-boot-starter-test'){
