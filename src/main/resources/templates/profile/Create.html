@@ -4,12 +4,11 @@
 </head>
 <body class="container">
 <nav th:replace="fragments :: navigation"></nav>
-<h4>Name</h4>
-<p th:text="${profile.name}"></p></br>
-<h4>Activity Level</h4>
-<p th:text="${profile.activityLevel}"></p></br>
-<h4>Energy Level</h4>
-<p th:text="${profile.energyLevel}"></p></br>
+<th:block th:each = "profile : ${profileDetails}">
+    <p th:text="${profile.name}"></p>
+    <p th:text="${profile.activityLevel}"></p>
+    <p th:text="${profile.energyLevel}"></p>
+</th:block>
 
 </body>
 </html>
