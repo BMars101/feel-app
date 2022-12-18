@@ -12,24 +12,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
+@RequestMapping("profile")
 public class ProfileController {
     @Autowired
-   private ProfileRepository profileRepository;
-    @GetMapping("profile")
-    public String name() {
+    private ProfileRepository profileRepository;
+
+    @GetMapping
+    public String displayProfileForm() {
         return "Profile";
 
     }
-    @PostMapping("/create")
+    @PostMapping("create")
     public String processProfileForm(@ModelAttribute @Valid Profile profile) {
     profileRepository.save(profile);
-    return "redirect:/create";
+    return "redirect:/profile/create";
 
     }
-    @GetMapping("/create")
+    @GetMapping("create")
     public String displayProfile(Model model) {
-        model.addAttribute("profile", profileRepository.findAll());
-        return "/create";
+        model.addAttribute("profileDetails", profileRepository.findAll());
+        return "profile/create";
     }
 
 //    public String checkActivityLevel(String activityLevel) {

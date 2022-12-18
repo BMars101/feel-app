@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head th:replace="fragments :: head">
+</head>
+<body class="container">
+<nav th:replace="fragments :: navigation"></nav>
+<th:block th:each = "profile : ${profileDetails}">
+    <p th:text="${profile.name}"></p>
+    <p th:text="${profile.activityLevel}"></p>
+    <p th:text="${profile.energyLevel}"></p>
+</th:block>
+
+</body>
+</html>
