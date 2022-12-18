@@ -2,6 +2,8 @@
 package org.launchcode.feelapp.models;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToOne;
+import javax.validation.Valid;
 
 @Entity
 public class Profile extends AbstractEntity{
@@ -17,6 +19,8 @@ public class Profile extends AbstractEntity{
     private String lifeImprovement;
     private String secretGoal;
 
+    @OneToOne(mappedBy = "profile")
+    private User user;
 
 
     public Profile(String name) {
@@ -94,7 +98,6 @@ public class Profile extends AbstractEntity{
     public void setEmotionalGoals(String emotionalGoals) {
         this.emotionalGoals = emotionalGoals;
     }
-
 
 
     public String getLifeImprovement() {

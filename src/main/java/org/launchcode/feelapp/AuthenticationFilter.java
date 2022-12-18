@@ -52,7 +52,7 @@ public class AuthenticationFilter implements HandlerInterceptor {
         }
 
       //not logged in
-        response.sendRedirect("/login");
+        response.sendRedirect("/water-intake");
         return false;
     }
 }
