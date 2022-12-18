@@ -34,5 +34,16 @@
             <p type="button" id="sign-up">New users<a href="/register"> Register here</a></p>
         </main>
     </body>
-<footer th:replace = "fragments :: footer"></footer>
+<footer style="width: 100%; display: grid;
+    grid-template-columns: auto auto auto; position: absolute; padding: 60px; background: #3785B9; bottom: 0; left: 0; ">
+    <div class="footer-item">
+        <h5><a style="color: white;" href="/contact">Contact Us</a></h5>
+    </div>
+    <div class="footer-item">
+        <h5><a style="color: white;" href="/about">About Us</a></h5>
+    </div>
+    <div>
+        <h5><a style="color: white;" href="/resources">Resources</a></h5>
+    </div>
+</footer>
 </html>
