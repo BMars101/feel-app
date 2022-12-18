@@ -1,7 +1,19 @@
 * {
     margin: 0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-size: cover;
+    opacity: 1.00;
+}
+
+html {
+    height: 100%;
+
     padding: 0;
     box-sizing: border-box;
+
 }
 body, html {
     height: 100%;
