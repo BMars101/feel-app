@@ -2,14 +2,19 @@
 <html lang="en" xmlns:th="https://www.thymeleaf.org/">
 <head th:replace="fragments :: head">
 </head>
-<body class="container" style="background: gray;">
-<nav th:replace="fragments :: navigation" style="background: gray;"></nav>
-        <main id="main-holder">
-            <img id="logo" src="#" alt="feel app logo"> 
-            <h1 id="login-header-main">Welcome to Feel</h1>
+<body class="container" style="font-family: 'Montserrat', sans-serif; background: #f5f5f5;">
+<nav style="padding-bottom: 40px;">
+    <h1 style="font-weight: bold; display: inline-block; padding: 30px;">Feel</h1>
+    <ul style="display: inline-flex; float: right; padding: 50px;">
+        <li class="nav-item" style="padding-right: 20px; list-style-type: none;"><a class="nav-link" href="/">Home </a></li>
+        <li class="nav-item" style="padding-right: 20px"><a class="nav-link" href="/register">Register User </a></li>
+        <li class="nav-item" style="padding-right: 20px"><a class="nav-link" href="/login">User Login </a></li>
+        <li class="nav-item" style="padding-right: 20px"><a class="nav-link" href="/logout">Logout </a></li>
+    </ul>
+</nav>
+        <main id="login-holder">
             <q>In time and with water, everything changes.</q><p> -Leonardo da Vinci</p>
             <h3 id="login-header-second">Login to start tracking your mood</h3>
-
             <form method="post" id="login-form">
                 <input type="text" id="username" class="login-username-field" placeholder="enter username" th:field="${loginDTO.username}">
                 <input type="password" id="password" class="login-password-field" placeholder="enter password" th:field="${loginDTO.password}">

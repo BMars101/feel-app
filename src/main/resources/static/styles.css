@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -21,9 +21,18 @@ body, html {
 }
 nav{
     width: 100%;
-    background: gray;
 }
-
+ul{
+    display: inline-flex;
+    float: right;
+    padding-right: 30px;
+}
+.nav-item-1 {
+    list-style-type: none;
+}
+.title {
+    display: inline-block;
+}
 footer {
     width: 100%;
     position: absolute;
@@ -34,13 +43,7 @@ footer {
     background: yellow;
     color: white;
 }
-.background-image {
-    position: absolute;
-    left: 0;
-     /* Full height */
-      height: 50%;
-      width: 100%;
-}
+
 .teaser-form {
     position: absolute;
     border: 1px solid black;
