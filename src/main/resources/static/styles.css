@@ -1,5 +1,4 @@
-body {
-    height: 100%;
+* {
     margin: 0;
     font-family: Arial, sans-serif;
     display: grid;
@@ -11,56 +10,41 @@ body {
 
 html {
     height: 100%;
-}
 
-#main-holder {
-    width: 50%;
-    height: 70%;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    border-radius: 7px;
-    box-shadow: 0px 0px 5 px 2 px black;
-}
+    padding: 0;
+    box-sizing: border-box;
 
-#login-error-msg-holder {
-    width: 100%;
+}
+body, html {
     height: 100%;
-    display: grid;
     margin: 0;
-    padding: 5px;
-    font-size: 12px;
-    border: 1px solid black;
-    opacity: 0;
 }
-
-#error-msg-second-line {
-    display: block;
-}
-
-#login-form {
-    border: none;
-    border-bottom: 1px solid black;
-    margin-bottom: 10px;
-    border-radius: 3px;
-    outline: none;
-    padding: 0px 0px 5px 5px;
-}
-
-#login-form-submit {
+nav{
     width: 100%;
-    padding: 7px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    outline: none;
+    background: gray;
 }
 
-#login-header-main{
-    font-size: 48px;
-    text-shadow: -1px -1px black, 1px 1 px gray, -3px 0 4px black;
-    font-family: "Segoe print", Arial, Helvetica, sans-serif;
-    align-items: center;
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background: yellow;
+    color: white;
+}
+.background-image {
+    position: absolute;
+    left: 0;
+     /* Full height */
+      height: 50%;
+      width: 100%;
+}
+.teaser-form {
+    position: absolute;
+    border: 1px solid black;
+    top: 0;
+    margin: 0; 0; auto;
+
 }
