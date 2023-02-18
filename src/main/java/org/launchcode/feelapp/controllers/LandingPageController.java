@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class LandingPageController {
 
     private WaterIntake waterIntake = new WaterIntake();
+    
     @GetMapping("water-intake")
     public String home(Model model){
         model.addAttribute("waterIntake", new WaterIntake());
