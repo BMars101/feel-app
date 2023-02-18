@@ -31,7 +31,7 @@ public class WaterIntake {
         this.dailyActivityTime = dailyActivityTime;
     }
 
-    ```
+    
     public String getWaterNeeds(){
         double waterNeeds = this.weight * .5;
         double waterNeedsWithExercise = ((this.dailyActivityTime/30)*12) + waterNeeds;
@@ -39,5 +39,5 @@ public class WaterIntake {
 
     }
 }
-```
+
 
